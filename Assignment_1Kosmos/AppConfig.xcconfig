@@ -1,0 +1,11 @@
+//
+//  AppConfig.xcconfig
+//  Assignment_1Kosmos
+//
+//  Created by Utkarsh Sehgal on 05/03/21.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+
+BASE_API_URL = https:\/\/reqres.in //https://reqres.in/api/users?page=
