@@ -55,7 +55,8 @@ class DataLoadOperation: Operation {
         if isCancelled { return }
         avatarImage = _avatarImage
         if let loadingCompleteHandler = loadingCompleteHandler {
-            DispatchQueue.main.async {[unowned self] in
+            DispatchQueue.main.async {[weak self] in
+                guard let self = self else { return }
                 loadingCompleteHandler(self._avatarImage)
             }
         }
